@@ -4,13 +4,18 @@
   "description": "Mist interface application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:interface": "meteor-build-client ../.build-interface -p ''"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ethereum/mist.git"
   },
-  "keywords": ["ethereum", "mist", "web3"],
+  "keywords": [
+    "ethereum",
+    "mist",
+    "web3"
+  ],
   "author": "Fabian Vogelsteller <fabian@ethereum.org>",
   "license": "GPL-3.0",
   "bugs": {
@@ -25,5 +30,8 @@
     "react-minimal-pie-chart": "^3.0.1",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "meteor-build-client": "^0.4.1"
   }
 }
